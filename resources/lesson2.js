@@ -79,7 +79,7 @@ function ex5Func() {
     var num1 = Number(prompt("Введите первое число"));
     var num2 = Number(prompt("Введите второе число"));
     var action = prompt("Введите операцию(+ - * /)");
-    mathOperation(num1, num2, action)
+    mathOperation(num1, num2, action);
 
 }
 
@@ -102,13 +102,13 @@ function ex6Func() {
 function checkPass(password){
     
     if (password.length < 3 || password.length > 12 ) 
-        return "Некорректный пароль"
+        return "Некорректный пароль";
     
     if (password.indexOf('&') == -1 && password.indexOf('$') == -1 && password.indexOf('%') == -1 && password.indexOf('*') == -1)
-        return "Некорректный пароль"
+        return "Некорректный пароль";
     
      if (password.indexOf('q') != 0 && password.lastIndexOf('z') != password.length - 1)
-        return "Некорректный пароль"
+        return "Некорректный пароль";
     
     return "Корректный пароль";
 }
