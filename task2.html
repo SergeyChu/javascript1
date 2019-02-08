@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <link href="resources/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/docco.css">
+    <script src="resources/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h2>Javascript, домашние работы</h2>
+    </header>
+    <div class="main_container">
+        <nav>
+            <ul class="main_menu">
+                <li><a href="#">Task 1</a></li>
+                <li><a href="index.html">На главную</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>1) Почему код даёт именно такие результаты?</h3>
+            <pre>
+    <code class="javascript">
+    // 1 пример
+    let a = 1, b = 1, c, d;
+    c= ++a;
+    alert(c); // ответ: 2
+    // Потому что префиксный инкремент сначала выполняется, меняет значение переменой, и оно уже присваивается c  
+    
+    // 2 пример
+    d = b++;
+    alert(d); //ответ: 1
+    // постфиксный инкремент - сначала d присваивается b и только потом уже b увеличивается
+    
+    // 3 пример
+    c = (2+ ++a);
+    alert(c); //ответ: 5 
+    // Значение а уже двойка, а после ещё одного префиксного инкремента становится 3 и складывается с 2. Получаем 5
+    
+    // 4 пример
+    d = (2+ b++);
+    alert(d); //ответ: 4
+    //Значение b - двойка, но т.к. инкремент постфиксный то получим 2 + 2 = 4, и уже после этого b будет 3
+    
+    alert(a); //ответ: 3
+    alert(b); //ответ: 3
+    // Все инкременты выполнились на а и b, поэтому переменные теперь 3
+    
+    </code>
+    </pre>
+
+            <h3>2) Чему будет равен x?</h3>
+            <pre>
+   <code class="javascript">
+   var a = 2;
+   var x = 1 + (a *= 2);
+   //Ответ: 1 + 2*2 = 5
+   
+   
+    </code>
+    </pre>
+            <br>
+        </main>
+    </div>
+    <footer>
+        <h4>Здесь могла быть ваша реклама</h4>
+    </footer>
+</body>
+
+</html>
