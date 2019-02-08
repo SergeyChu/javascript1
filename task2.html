@@ -7,6 +7,7 @@
     <link href="resources/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/docco.css">
     <script src="resources/highlight.pack.js"></script>
+    <script src="resources/lesson2.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
@@ -62,11 +63,63 @@
    var a = 2;
    var x = 1 + (a *= 2);
    //Ответ: 1 + 2*2 = 5
-   
-   
     </code>
     </pre>
+           
+            <h2>Task 3</h2>
+            <pre>
+Объявить две целочисленные переменные — a и b и задать им произвольные
+начальные значения. Затем написать скрипт, который работает по следующему
+принципу:
+ - если a и b положительные, вывести их разность;
+ - если а и b отрицательные, вывести их произведение;
+ - если а и b разных знаков, вывести их сумму;
+Ноль можно считать положительным числом
+           </pre>
+            <button onclick="ex3Func()">Проверить</button>
+            
+            <h2>Task 4</h2>
+            <pre>
+Реализовать четыре основные арифметические операции в виде функций с двумя
+параметрами. Обязательно использовать оператор return.
+           </pre>
+            <input type="radio" id="summ_radio" name="operation"><label for="summ_radio">Сложение</label><br>
+            <input type="radio" id="sub_radio" name="operation"><label for="sub_radio">Вычитание</label><br>
+            <input type="radio" id="mul_radio" name="operation"><label for="mul_radio">Умножение</label><br>
+            <input type="radio" id="div_radio" name="operation"><label for="div_radio">Деление</label><br>
             <br>
+            <button onclick="ex4Func()">Проверить</button>
+
+            <h2>Task 5</h2>
+            <pre>
+Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2,operation), где arg1, arg2 — значения аргументов, operation — строка с названием
+операции. В зависимости от переданного значения выполнить одну из
+арифметических операций (использовать функции из пункта 4 и вернуть полученное
+значение (применить switch).
+           </pre>
+            <br>
+            <button onclick="ex5Func()">Проверить</button>
+            
+            <h2>Task 6</h2>
+            <pre>С помощью рекурсии организовать функцию возведения числа в степень. Формат:
+function power(val, pow), где val — заданное число, pow –— степень</pre>
+            <br>
+            <button onclick="ex6Func()">Проверить</button>
+            
+            <h2>Task 7</h2>
+            <pre>*Написать функцию для проверки пароля. На вход должен подаваться аргумент path
+– строка с паролем. Требования к паролю:
+• длина должна быть не меньше 3-х символов и не больше 12;
+• пароль должен содержать хотя бы один из следующих символов: &, $, %, *;
+• пароль должен либо начинаться с буквы ‘q’, либо заканчиваться буквой ‘z’, либо
+оба условия сразу.
+На выходе функция должна возвращать строку «Корректный пароль» в том случае,
+если пароль удовлетворяет всем условиям, и строку «Некорректный пароль» в том
+случае, если пароль не удовлетворяет условиям.</pre>
+            <br>
+            <button onclick="ex7Func()">Проверить</button>            
+            
+            
         </main>
     </div>
     <footer>
