@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <link href="resources/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/docco.css">
+    <script src="resources/highlight.pack.js"></script>
+    <script src="resources/lesson3.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h2>Javascript, домашние работы</h2>
+    </header>
+    <div class="main_container">
+        <nav>
+            <ul class="main_menu">
+                <li><a href="#">Task 1</a></li>
+                <li><a href="task2.html">Task 2</a></li>
+                <li><a href="index.html">На главную</a></li>
+                
+            </ul>
+        </nav>
+        <main>
+            <h3>1) Дан массив cкопируйте	его	в	переменную	b	и	выведите	в	консоль.</h3>
+                        <pre>
+    <code class="javascript">
+          let a = [
+[{name: 'Mary', age: 23}, {name: 'Mike', age: 45}, {name: 'Nick', age: 11}],
+[{name: 'Adam', age: 56}, {name: 'Sara', age: 21}, {name: 'Don', age: 22}],
+[{name: 'Karl', age: 34}, {name: 'Marta', age: 76}, {name: 'John', age: 19}]
+];
+           </code></pre>    
+            <button onclick="task3Ex1Func()">Проверить</button>
+            <h3>2) Реализовать сущность корзины </h3>
+            <pre>
+Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.
+Товары в корзине хранятся в массиве. Задачи:
+a. Организовать такой массив для хранения товаров в корзине;
+b. Организовать функцию countBasketPrice, которая будет считать
+стоимость корзины
+            </pre>
+            <button onclick="task3Ex2Func()">Проверить</button>
+            <h3>3) *	Вывести	с	помощью	цикла	for числа	от	0	до	9,	не	используя	тело	цикла.</h3>
+            <pre>Выглядеть	должно	так:
+for(…){//	здесь	пусто}	
+            </pre>
+            <button onclick="task3Ex3Func()">Проверить</button>
+            <h3>4) *	Нарисовать	пирамиду	из	20	рядов	с	помощью	console.log</h3>
+            <button onclick="task3Ex4Func()">Проверить</button>                      
+        </main>
+    </div>
+    <footer>
+        <h4>Здесь могла быть ваша реклама</h4>
+    </footer>
+</body>
+
+</html>
