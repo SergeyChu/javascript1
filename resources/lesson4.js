@@ -1,4 +1,4 @@
-//As it should be a global variable
+var task3GameRunning = false;
 
 function transformNumberToObj(number){
     retObject = {};
@@ -107,7 +107,62 @@ function task4Ex2Func(){
     basket.goodList = [];
 }
 
+function gameAction(e) {
 
-function task4Ex2Func(){
-    
+    let nextPoint = {
+        x: player.x,
+        y: player.y
+    };
+
+    // 2, 6, 8, 4, 1, 7, 9, 3
+    switch (e.key) {
+        case '2':
+            nextPoint.y++;
+            break;
+        case '1':
+            nextPoint.y++;
+            nextPoint.x--;
+            break;
+        case '3':
+            nextPoint.y++;
+            nextPoint.x++;
+            break;
+        case '6':
+            nextPoint.x++;
+            break;
+        case '8':
+            nextPoint.y--;
+            break;
+        case '7':
+            nextPoint.y--;
+            nextPoint.x--;
+            break;
+        case '9':
+            nextPoint.y--;
+            nextPoint.x++;
+            break;
+        case '4':
+            nextPoint.x--;
+            break;
+    }
+
+    player.move(nextPoint);
+
+    renderer.render();
+
+}
+
+function task4Ex3Func(){
+    if (!task3GameRunning){
+        document.addEventListener("keypress", gameAction, false);
+        task3GameRunning = true;
+        renderer.render();
+        document.getElementById("gButton").innerText = "Хватит";
+        alert("Бродика включена, теперь можно наживать клавиши 1,2,3,4,6,7,8,9");
+    } else {
+        document.removeEventListener("keypress", gameAction, false);
+        task3GameRunning = false;
+        document.getElementById("gButton").innerText = "Проверить";
+        alert("Бродика выключена");
+    }
 }
