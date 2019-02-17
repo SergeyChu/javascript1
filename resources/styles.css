@@ -1,0 +1,79 @@
+header,
+footer {
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.main_container {
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.main_menu {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.main_menu li {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+.main_menu a {
+    text-decoration: none;
+    width: inherit;
+    height: inherit;
+    display: block;
+    color: black;
+    border: 0px solid black;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.main_menu a:hover {
+    background-color: azure;
+    color: cornflowerblue;
+}
+
+nav {
+    float: left;
+    width: 150px;
+}
+
+
+main {
+    min-width: 250px;
+    max-width: 650px;
+    margin-left: 150px;
+    min-height: 200px;
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.game {
+    width: 300px;
+    height: 300px;
+    background-color: azure;
+}
+
+.gTable{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: inherit;
+    height: inherit;
+}
+
+.gTable td{
+    text-align: center;
+    border: 1px solid black;
+}
